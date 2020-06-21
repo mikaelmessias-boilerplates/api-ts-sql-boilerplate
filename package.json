@@ -1,0 +1,25 @@
+{
+  "name": "api-ts-boilerplate",
+  "version": "1.0.0",
+  "description": "Backend boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaelmessias/api-ts-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "Mikael Messias",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mikaelmessias/api-ts-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mikaelmessias/api-ts-boilerplate#readme",
+  "devDependencies": {
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.49",
+    "typescript": "^3.9.5"
+  }
+}
