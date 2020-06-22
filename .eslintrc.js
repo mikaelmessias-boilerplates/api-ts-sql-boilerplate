@@ -22,6 +22,8 @@ module.exports = {
   ],
   rules: {
     'no-console': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/explicit-function-return-type': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -30,6 +32,7 @@ module.exports = {
         ts: 'never',
       },
     ],
+    'import/prefer-default-export': 0,
     'import-helpers/order-imports': [
       'warn',
       {
