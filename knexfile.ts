@@ -1,11 +1,12 @@
 import path from 'path';
+import env from './src/utils/dotenv';
 
 const connectionPath = ['src', 'database', 'database.sqlite'];
 const migrationsPath = ['src', 'database', 'migrations'];
 const seedsPath = ['src', 'database', 'seeds'];
 
 module.exports = {
-  client: 'sqlite3',
+  client: env.CLIENT,
   connection: {
     filename: path.resolve(__dirname, ...connectionPath),
   },

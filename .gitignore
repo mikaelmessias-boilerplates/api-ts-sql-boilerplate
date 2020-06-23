@@ -126,3 +126,6 @@ dist
 
 # SQLite Database file
 *.sqlite
+
+# Enviroment variables file
+.env

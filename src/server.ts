@@ -2,6 +2,7 @@ import cors from 'cors';
 import express from 'express';
 import path from 'path';
 import routes from './routes';
+import env from './utils/dotenv';
 
 const app = express();
 
@@ -13,4 +14,7 @@ const uploadsPath = express.static(path.resolve(__dirname, '..', 'uploads'));
 
 app.use('/uploads', uploadsPath);
 
-app.listen(3333);
+app.listen(env.PORT, () => {
+  console.clear();
+  console.log(`Server is listening on port ${env.PORT}\n`);
+});
