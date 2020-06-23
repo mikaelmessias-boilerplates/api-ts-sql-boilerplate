@@ -21,6 +21,7 @@ module.exports = {
     'eslint-plugin-import-helpers',
   ],
   rules: {
+    'class-methods-use-this': 0,
     'no-console': 0,
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/explicit-function-return-type': 'off',
